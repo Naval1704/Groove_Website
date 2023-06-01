@@ -187,3 +187,143 @@ footer{
     color: #D9D6E5;
     font-weight: bold;
 }
+
+@media screen and (max-width: 600px){
+   
+    .header-container {
+        display: flex ;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        user-select: none;
+        padding: 0 1px;
+        max-width: 600px;
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        opacity: 1;
+        box-shadow: 0px 2px 5px #0e0814;
+    }
+
+    .header-container .groove-logo {
+        display: flex;
+        height: 30px;
+        margin-left: 1px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .header-container .header-tabs {
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2px;
+    }
+
+    .header-container .header-tabs a {
+        margin-right: 10px; 
+        margin-left: 10px;
+        margin: 1px;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .header-container .search-button {
+        display: flex;
+        margin-right: 20px;
+        margin-left: 1px;
+        size: 1px;
+    }
+
+    .header-container .profileButton {
+        display: flex;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    footer{
+        display: block;
+    }
+    .footer {
+        box-shadow: 0px 0px 10px #0e0814;
+        margin: auto;
+        max-width: 600px;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        user-select: none;
+    }
+
+    .footer h3 {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 15px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    .footer h3::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 30px;
+    }
+
+    .footer .Upperfooter {
+        display: flex;
+        flex-direction: row ;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        margin-top: 7px ;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        gap: 20px;
+    }
+    .footer .Upperfooter .LeftSection {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+
+    .footer .Upperfooter .rightSection {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .footer .BottomFooter {
+        margin-top: 7px ;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        align-items: center;
+        justify-content: space-between;
+        border-top-width: 2px;
+        border-top-style: solid;
+        border-top-color: rgba(228, 218, 218, 0.484);
+    }
+    .footer .BottomFooter p {
+        color: #D9D6E5;
+        font-weight: bold;
+        font-size: 12px;
+    } 
+    .footer .BottomFooter img {
+        height: 30px;
+    } 
+}
